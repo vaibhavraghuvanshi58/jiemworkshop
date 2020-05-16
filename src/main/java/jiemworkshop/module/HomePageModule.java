@@ -9,4 +9,8 @@ public class HomePageModule {
 	public static String getTitle() {
 		return homepage.getHomePageTitle();
 	}
+	
+	public static void clickUpperMenu(String linkText) {
+		homepage.click_lnk_uppermenu(linkText);
+	}
 }

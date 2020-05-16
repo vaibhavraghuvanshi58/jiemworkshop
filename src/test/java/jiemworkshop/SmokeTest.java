@@ -8,7 +8,7 @@ import jiemworkshop.module.HomePageModule;
 
 public class SmokeTest extends BaseTestCase {
 	 
-	@Test
+	//@Test
 	public void atest_smoke_test() {
 		assertEquals("Welcome: Mercury Tours",HomePageModule.getTitle());
 	}

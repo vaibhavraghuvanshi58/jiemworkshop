@@ -6,12 +6,12 @@ import org.junit.Before;
 import jiemworkshop.module.App;
 
 public class BaseTestCase {
-	@Before
+	//@Before
 	public void setup() {
 		App.openAut();
 	}
 	
-	@After
+	//@After
 	public void teardown() {
 		App.closeAut();
 	}

@@ -7,7 +7,8 @@ public class RegisterPage extends BaseAction{
 
 	private static final String RegistrationPageTitle = "Register: Mercury Tours";
 
-	private static By txt_firtname = By.xpath("//input[@name='firstName']"); 
+	private static By txt_firtname = By.cssSelector("input[name^='first']"); 
+	//private static By txt_firtname = By.xpath("//input[@name='firstName']");
 	private static By txt_lastname = By.xpath("//input[@name='lastName']"); 
 	private static By txt_phone = By.xpath("//input[@name='phone']"); 
 	private static By txt_email = By.xpath("//input[@name='userName']"); 

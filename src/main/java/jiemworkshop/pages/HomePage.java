@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 
 public class HomePage extends BaseAction {
 	// All Links
+	private static String lnk_dynamicButton ="//a[text()='{{linktext}}']"; 
 	private static By lnk_SignOnButton = By.xpath("//a[text()='SIGN-ON']"); 
 	private static By lnk_RegisterButton = By.xpath("//a[text()='REGISTER']"); 
 	private static By lnk_SupportButton = By.xpath("//a[text()='SUPPORT']"); 
@@ -23,6 +24,9 @@ public class HomePage extends BaseAction {
 	private static By lnk_sidemenuVacationsButton  = By.xpath(sideMenuXpath+"//a[text()='Vacations']"); 
 	
 	
+	public void click_lnk_uppermenu(String linktext) {
+		click(By.xpath(lnk_dynamicButton.replace("{{linktext}}", linktext)));
+	}
 	
 	public String getHomePageTitle() {
 		return getTitle();
